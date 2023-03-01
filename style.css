@@ -321,6 +321,10 @@ footer p {
     footer{
         padding: 80px 165px;
     }
+    svg:hover path{
+        cursor: pointer;
+        fill:#D5966C;
+    }
 }
 
 
