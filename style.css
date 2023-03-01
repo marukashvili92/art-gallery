@@ -35,15 +35,17 @@ main {
     gap: 25px;
 }
 
-.upper-section{
+.upper-section {
     display: grid;
     gap: 25px;
 }
-.content{
+
+.content {
     display: grid;
     gap: 25px;
 }
-.lower-section{
+
+.lower-section {
     display: grid;
     gap: 25px;
 }
@@ -100,10 +102,6 @@ p {
     padding-top: 48px;
     background-color: #151515;
     color: #FFFFFF
-}
-
-.hall-img {
-    margin: 16px 0;
 }
 
 footer {
@@ -176,17 +174,19 @@ footer p {
         padding: 0;
         gap: 25px;
     }
-    
-    .upper-section{
+
+    .upper-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 68px;
     }
-    .content{
+
+    .content {
         display: grid;
         gap: 25px;
     }
-    .lower-section{
+
+    .lower-section {
         display: grid;
         gap: 11px;
     }
@@ -225,10 +225,7 @@ footer p {
 }
 
 
-
-
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
     .tablet-img {
         display: none;
     }
@@ -242,12 +239,13 @@ footer p {
         top: 0;
 
     }
+
     .black-background {
         display: block;
         position: absolute;
 
         left: 0x;
-        width: 450px;
+        width: 290px;
         height: 800px;
         background: #151515;
     }
@@ -256,7 +254,217 @@ footer p {
         z-index: 1;
         position: absolute;
         top: 190px;
-        left: 165px;
+        left: 50px;
+        width: 450px;
+        font-size: 6rem;
+        line-height: 88px;
+
+
+        background: linear-gradient(90deg, #FFFFFF 240px, #151515 240px, #151515 360px, rgb(35, 62, 121) 360px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .heading-txt-conteiner {
+        position: absolute;
+        top: 190px;
+        left: 760px;
+
+        font-size: 22px;
+    }
+
+    header p {
+        padding-top: 0;
+        font-size: 1.375rem;
+        width: 350px;
+    }
+
+    .location-button {
+        padding: 24px 35px 24px 32px;
+
+    }
+
+    body {
+        background-image: url(./desktop/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: 540px;
+    }
+
+    main {
+        margin: 1000px 40px 180px 40px;
+        gap: 30px;
+    }
+
+
+    .upper-section {
+        gap: 30px;
+    }
+
+    .content {
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        .tablet-img {
+            display: none;
+        }
+
+        .desctop-img {
+            display: block;
+        }
+
+        header {
+            left: 0;
+            top: 0;
+
+        }
+
+        .black-background {
+            display: block;
+            position: absolute;
+
+            left: 0x;
+            width: 520px;
+            height: 800px;
+            background: #151515;
+        }
+
+        .heading {
+            z-index: 1;
+            position: absolute;
+            top: 190px;
+            left: 235px;
+            width: 450px;
+            font-size: 6rem;
+            line-height: 88px;
+
+
+            background: linear-gradient(90deg, #FFFFFF 285px, #151515 285px);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .heading-txt-conteiner {
+            position: absolute;
+            top: 190px;
+            left: 1000px;
+
+            font-size: 22px;
+        }
+
+        header p {
+            padding-top: 0;
+            font-size: 1.375rem;
+            width: 350px;
+        }
+
+        .location-button {
+            padding: 24px 35px 24px 32px;
+
+        }
+        .location:hover .location-arrow{
+            background-color: #151515;
+        }
+    
+        .location:hover a {
+            background-color: #D5966C;
+        }
+
+        body {
+            background-image: url(./desktop/image-hero.jpg);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-size: 540px;
+        }
+
+        main {
+            margin: 1000px 165px 180px 185px;
+            gap: 30px;
+        }
+
+
+
+        .upper-section {
+            gap: 30px;
+        }
+
+        .content {
+            gap: 30px;
+        }
+
+        .lower-section {
+            gap: 30px;
+        }
+
+        .invitation {
+            padding: 65px 45px;
+        }
+
+        h2 {
+            line-height: 60px;
+            font-size: 3.75rem;
+        }
+
+        .invitation-txt {
+            font-size: 1.375rem;
+            line-height: 32px;
+        }
+
+        footer {
+            padding: 80px 165px;
+        }
+
+        svg:hover path {
+            fill: #D5966C;
+        }
+    }
+}
+
+.lower-section {
+    gap: 30px;
+}
+
+.invitation {
+    padding: 65px 45px;
+}
+
+h2 {
+    line-height: 60px;
+    font-size: 3.75rem;
+}
+
+.invitation-txt {
+    font-size: 1.375rem;
+    line-height: 32px;
+}
+
+footer {
+    padding: 80px 165px;
+}
+
+svg:hover path {
+    cursor: pointer;
+    fill: #D5966C;
+}
+}
+
+
+@media screen and (min-width: 1440px) {
+
+
+    .black-background {
+        left: 0x;
+        width: 520px;
+        height: 800px;
+        background: #151515;
+    }
+
+    .heading {
+        z-index: 1;
+        position: absolute;
+        top: 190px;
+        left: 235px;
         width: 450px;
         font-size: 6rem;
         line-height: 88px;
@@ -266,23 +474,14 @@ footer p {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .heading-txt-conteiner{
-        position: absolute;
+
+    .heading-txt-conteiner {
         top: 190px;
-        left: 925px;
-        
+        left: 1000px;
+
         font-size: 22px;
     }
-    header p{
-        padding-top: 0;
-        font-size: 1.375rem;
-        width: 350px;
-    }
 
-    .location-button{
-        padding: 24px 35px 24px 32px;
-        
-    }
     body {
         background-image: url(./desktop/image-hero.jpg);
         background-repeat: no-repeat;
@@ -290,84 +489,47 @@ footer p {
         background-size: 540px;
     }
 
-    main{
+    main {
         margin: 1000px 165px 180px 185px;
         gap: 30px;
     }
 
-    
-    
-    .upper-section{
-        gap: 30px;
-    }
-    .content{
-        gap: 30px;
-    }
-    .lower-section{
-        gap: 30px;
-    }
-    .invitation{
-        padding: 65px 45px;
-    }
-    h2{
-        line-height: 60px;
-        font-size: 3.75rem;
-    }
-    .invitation-txt{
-        font-size: 1.375rem;
-        line-height: 32px;
-    }
+    @media (prefers-color-scheme: dark) {
+        h1 {
+            color: aquamarine;
+        }
 
-    footer{
-        padding: 80px 165px;
-    }
-    svg:hover path{
-        cursor: pointer;
-        fill:#D5966C;
-    }
-}
+        p {
+            color: #F2F2F2;
+        }
 
+        .location-button {
+            background-color: beige;
+            color: #151515;
+        }
 
+        h2 {
+            color: #F2F2F2;
+        }
 
+        .invitation {
+            background-color: #867070;
+            color: #FFFFFF;
+        }
 
+        footer {
+            background-color: #41618a;
+        }
 
+        .dark-logo {
+            display: block;
+            height: 40px;
+            width: 110px;
 
-@media (prefers-color-scheme: dark) {
-    h1 {
-        color: aquamarine;
-    }
+        }
 
-    p {
-        color: #F2F2F2;
-    }
-
-    .location-button {
-        background-color: beige;
-        color: #151515;
-    }
-
-    h2 {
-        color: #F2F2F2;
-    }
-
-    .invitation {
-        background-color: #867070;
-        color: #FFFFFF;
-    }
-
-    footer {
-        background-color: #41618a;
-    }
-
-    .dark-logo {
-        display: block;
-        height: 40px;
-        width: 110px;
+        .light-logo {
+            display: none;
+        }
 
     }
-
-    .light-logo {
-        display: none;
-    }
-
-}
