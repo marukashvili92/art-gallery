@@ -1,0 +1,369 @@
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    background-image: url("./mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+    font-family: 'Big Shoulders Display', cursive;
+
+}
+
+.black-background {
+    display: none;
+}
+
+.tablet-img {
+    display: none;
+}
+
+.desctop-img {
+    display: none;
+}
+
+header {
+    margin-top: 272px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin-top: 104px;
+    gap: 25px;
+}
+
+.upper-section{
+    display: grid;
+    gap: 25px;
+}
+.content{
+    display: grid;
+    gap: 25px;
+}
+.lower-section{
+    display: grid;
+    gap: 25px;
+}
+
+.heading {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 900;
+    font-size: 3.75rem;
+    line-height: 55px;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 3.125rem;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+p {
+    max-width: 350px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 28px;
+    padding: 32px 0;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location-button {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 24px;
+    letter-spacing: 3.63636px;
+    text-decoration: none;
+    border-width: 0;
+    padding: 24px 32px;
+    background-color: #151515;
+    color: #FFFFFF;
+}
+
+.location-arrow {
+    padding: 24px;
+    background-color: #D5966C;
+}
+
+.invitation {
+    padding: 24px;
+    padding-top: 48px;
+    background-color: #151515;
+    color: #FFFFFF
+}
+
+.hall-img {
+    margin: 16px 0;
+}
+
+footer {
+    margin-top: 104px;
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    padding-right: 16px;
+    background-color: #151515;
+    color: #FFFFFF;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.light-logo {
+    height: 40px;
+    width: 110px;
+
+}
+
+.dark-logo {
+    display: none;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url("./tablet/image-hero.jpg");
+        background-position-x: left;
+        background-size: 437px;
+        padding: 0;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+    .tablet-img {
+        display: block;
+    }
+
+    header {
+        position: absolute;
+        top: 145px;
+        left: 389px;
+        gap: 48px;
+        margin: 0;
+
+    }
+
+    header p {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        padding: 48px 0;
+        line-height: 28px;
+        color: #444444;
+    }
+
+    main {
+        /* margin-top: 651px; */
+        margin: 820px 40px 0 40px;
+        padding: 0;
+        gap: 25px;
+    }
+    
+    .upper-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 68px;
+    }
+    .content{
+        display: grid;
+        gap: 25px;
+    }
+    .lower-section{
+        display: grid;
+        gap: 11px;
+    }
+
+
+    .text-conteiner {
+        margin-top: 36px;
+        order: -1;
+    }
+
+    .content {
+        display: flex;
+        gap: 11px;
+    }
+
+    .invitation {
+        display: grid;
+        gap: 24px;
+        padding: 85px 28px;
+    }
+
+    .invitation-txt {
+        padding: 0;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 56px 40px;
+
+    }
+
+    footer p {
+        padding: 0 133px 0 65px;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    .tablet-img {
+        display: none;
+    }
+
+    .desctop-img {
+        display: block;
+    }
+
+    header {
+        left: 0;
+        top: 0;
+
+    }
+    .black-background {
+        display: block;
+        position: absolute;
+
+        left: 0x;
+        width: 450px;
+        height: 800px;
+        background: #151515;
+    }
+
+    .heading {
+        z-index: 1;
+        position: absolute;
+        top: 190px;
+        left: 165px;
+        width: 450px;
+        font-size: 6rem;
+        line-height: 88px;
+
+
+        background: linear-gradient(90deg, #FFFFFF 285px, #151515 285px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .heading-txt-conteiner{
+        position: absolute;
+        top: 190px;
+        left: 925px;
+        
+        font-size: 22px;
+    }
+    header p{
+        padding-top: 0;
+        font-size: 1.375rem;
+        width: 350px;
+    }
+
+    .location-button{
+        padding: 24px 35px 24px 32px;
+        
+    }
+    body {
+        background-image: url(./desktop/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: 540px;
+    }
+
+    main{
+        margin: 1000px 165px 180px 185px;
+        gap: 30px;
+    }
+
+    
+    
+    .upper-section{
+        gap: 30px;
+    }
+    .content{
+        gap: 30px;
+    }
+    .lower-section{
+        gap: 30px;
+    }
+    .invitation{
+        padding: 65px 45px;
+    }
+    h2{
+        line-height: 60px;
+        font-size: 3.75rem;
+    }
+    .invitation-txt{
+        font-size: 1.375rem;
+        line-height: 32px;
+    }
+
+    footer{
+        padding: 80px 165px;
+    }
+}
+
+
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    h1 {
+        color: aquamarine;
+    }
+
+    p {
+        color: #F2F2F2;
+    }
+
+    .location-button {
+        background-color: beige;
+        color: #151515;
+    }
+
+    h2 {
+        color: #F2F2F2;
+    }
+
+    .invitation {
+        background-color: #867070;
+        color: #FFFFFF;
+    }
+
+    footer {
+        background-color: #41618a;
+    }
+
+    .dark-logo {
+        display: block;
+        height: 40px;
+        width: 110px;
+
+    }
+
+    .light-logo {
+        display: none;
+    }
+
+}
