@@ -108,8 +108,7 @@ footer {
     margin-top: 104px;
     display: flex;
     flex-direction: column;
-    padding: 48px;
-    padding-right: 16px;
+    padding: 48px 32px;
     background-color: #151515;
     color: #FFFFFF;
 }
@@ -237,13 +236,11 @@ footer p {
     header {
         left: 0;
         top: 0;
-
     }
 
     .black-background {
         display: block;
         position: absolute;
-
         left: 0x;
         width: 290px;
         height: 800px;
@@ -258,8 +255,6 @@ footer p {
         width: 450px;
         font-size: 6rem;
         line-height: 88px;
-
-
         background: linear-gradient(90deg, #FFFFFF 240px, #151515 240px, #151515 360px, rgb(35, 62, 121) 360px);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -268,8 +263,7 @@ footer p {
     .heading-txt-conteiner {
         position: absolute;
         top: 190px;
-        left: 760px;
-
+        left: 650px;
         font-size: 22px;
     }
 
@@ -281,7 +275,14 @@ footer p {
 
     .location-button {
         padding: 24px 35px 24px 32px;
+    }
 
+    .location:hover .location-arrow {
+        background-color: #151515;
+    }
+
+    .location:hover a {
+        background-color: #D5966C;
     }
 
     body {
@@ -296,6 +297,9 @@ footer p {
         gap: 30px;
     }
 
+    .exibition-works {
+        width: 470px;
+    }
 
     .upper-section {
         gap: 30px;
@@ -305,150 +309,41 @@ footer p {
         gap: 30px;
     }
 
-    @media screen and (min-width: 1440px) {
-        .tablet-img {
-            display: none;
-        }
+    .lower-section {
+        gap: 30px;
+    }
 
-        .desctop-img {
-            display: block;
-        }
+    .invitation {
+        padding: 65px 45px;
+        background-color: transparent;
+    }
 
-        header {
-            left: 0;
-            top: 0;
+    .invitation-header {
+        line-height: 60px;
+        font-size: 3.75rem;
+        background: linear-gradient(90deg, #df2020 125px, #0a2dc9 185px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-        }
+    .invitation-txt {
+        font-size: 1.375rem;
+        font-weight: 800;
+        line-height: 32px;
+        background: linear-gradient(75deg, #5809a1 125px, #9e0563 185px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-        .black-background {
-            display: block;
-            position: absolute;
+    footer {
+        padding: 80px 165px;
+    }
 
-            left: 0x;
-            width: 520px;
-            height: 800px;
-            background: #151515;
-        }
-
-        .heading {
-            z-index: 1;
-            position: absolute;
-            top: 190px;
-            left: 235px;
-            width: 450px;
-            font-size: 6rem;
-            line-height: 88px;
-
-
-            background: linear-gradient(90deg, #FFFFFF 285px, #151515 285px);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .heading-txt-conteiner {
-            position: absolute;
-            top: 190px;
-            left: 1000px;
-
-            font-size: 22px;
-        }
-
-        header p {
-            padding-top: 0;
-            font-size: 1.375rem;
-            width: 350px;
-        }
-
-        .location-button {
-            padding: 24px 35px 24px 32px;
-
-        }
-        .location:hover .location-arrow{
-            background-color: #151515;
-        }
-    
-        .location:hover a {
-            background-color: #D5966C;
-        }
-
-        body {
-            background-image: url(./desktop/image-hero.jpg);
-            background-repeat: no-repeat;
-            background-position-x: center;
-            background-size: 540px;
-        }
-
-        main {
-            margin: 1000px 165px 180px 185px;
-            gap: 30px;
-        }
-
-
-
-        .upper-section {
-            gap: 30px;
-        }
-
-        .content {
-            gap: 30px;
-        }
-
-        .lower-section {
-            gap: 30px;
-        }
-
-        .invitation {
-            padding: 65px 45px;
-        }
-
-        h2 {
-            line-height: 60px;
-            font-size: 3.75rem;
-        }
-
-        .invitation-txt {
-            font-size: 1.375rem;
-            line-height: 32px;
-        }
-
-        footer {
-            padding: 80px 165px;
-        }
-
-        svg:hover path {
-            fill: #D5966C;
-        }
+    svg:hover path {
+        cursor: pointer;
+        fill: #D5966C;
     }
 }
-
-.lower-section {
-    gap: 30px;
-}
-
-.invitation {
-    padding: 65px 45px;
-}
-
-h2 {
-    line-height: 60px;
-    font-size: 3.75rem;
-}
-
-.invitation-txt {
-    font-size: 1.375rem;
-    line-height: 32px;
-}
-
-footer {
-    padding: 80px 165px;
-}
-
-svg:hover path {
-    cursor: pointer;
-    fill: #D5966C;
-}
-}
-
 
 @media screen and (min-width: 1440px) {
 
@@ -477,7 +372,7 @@ svg:hover path {
 
     .heading-txt-conteiner {
         top: 190px;
-        left: 1000px;
+        left: 925px;
 
         font-size: 22px;
     }
@@ -494,42 +389,83 @@ svg:hover path {
         gap: 30px;
     }
 
-    @media (prefers-color-scheme: dark) {
-        h1 {
-            color: aquamarine;
-        }
+    .upper-section h2 {
+        width: 350px;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #151515;
+    }
 
-        p {
-            color: #F2F2F2;
-        }
+    .upper-section p {
+        width: 350px;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 32px;
+        /* or 145% */
 
-        .location-button {
-            background-color: beige;
-            color: #151515;
-        }
 
-        h2 {
-            color: #F2F2F2;
-        }
+        /* Dark Grey */
 
-        .invitation {
-            background-color: #867070;
-            color: #FFFFFF;
-        }
+        color: #444444;
+    }
 
-        footer {
-            background-color: #41618a;
-        }
+    .exibition-works {
+        width: fit-content;
+    }
 
-        .dark-logo {
-            display: block;
-            height: 40px;
-            width: 110px;
+    .invitation {
+        background-color: #151515;
+    }
 
-        }
+    .invitation-header {
+        -webkit-text-fill-color: #ffffff;
+    }
 
-        .light-logo {
-            display: none;
-        }
+    .invitation-txt {
+        -webkit-text-fill-color: #ffffff;
 
     }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    h1 {
+        color: aquamarine;
+    }
+
+    p {
+        color: #F2F2F2;
+    }
+
+    .location-button {
+        background-color: beige;
+        color: #151515;
+    }
+
+    h2 {
+        color: #F2F2F2;
+    }
+
+    .invitation {
+        background-color: #867070;
+        color: #FFFFFF;
+    }
+
+    footer {
+        background-color: #41618a;
+    }
+
+    .dark-logo {
+        display: block;
+        height: 40px;
+        width: 110px;
+
+    }
+
+    .light-logo {
+        display: none;
+    }
+
+}
